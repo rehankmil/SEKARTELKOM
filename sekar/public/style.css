@@ -78,27 +78,79 @@ body {
 }
 
 .main-body {
+    margin-top: 80px;
+    padding: 20px;
     text-align: center;
-    margin-top: 80px
-}
-
-.main-image {
-    width: 100%;
-    height: auto;
 }
 
 .news-section {
     display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.news-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .news-item {
     background-color: #f1f1f1;
-    margin: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-item.large {
+    flex: 2;
+}
+
+.news-item.small {
+    flex: 1;
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.news-content {
     padding: 20px;
-    border-radius: 5px;
-    width: 30%;
+    position: relative;
+}
+
+.news-content h3 {
+    margin-bottom: 10px;
+}
+
+.news-meta {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.news-summary {
+    font-size: 1em;
+    text-align: justify;
+}
+
+.news-summary a {
+    color: #0B3A7C;
+    text-decoration: none;
+}
+
+.news-summary a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* FOOTER */
+.footer {
+    position: relative;
+    background-color: #f1f1f1;
 }
 
 .footer-image {
@@ -107,14 +159,49 @@ body {
 }
 
 .footer-content {
-    background-color: white;
-    color: black;
-    text-align: center;
-    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fff;
 }
 
-.footer-content p {
-    margin: 10px 0;
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: #0B3A7C;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    width: 300px;
+    margin-top: 10px;
+}
+
+.footer-bottom {
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #333;
+    font-size: 0.7em;
+    font-weight: bold;
 }
 
 
@@ -337,4 +424,78 @@ body {
     height: 100vh;
     background: white;
     background-size: cover;
+}
+
+
+
+/* Data page styles */
+.data-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    background-color: #E4F0FF;
+    min-height: 100vh; /* Ensure the container covers the viewport height */
+    overflow-y: auto;
+}
+
+.data-box {
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    padding: 0;
+}
+
+.data-header {
+    display: flex;
+    align-items: center;
+    background-color: #0B3A7C; /* Use the same blue color */
+    color: white;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+.data-logo {
+    height: 150px;
+    margin-right: 50px;
+}
+
+.data-header h2 {
+    color: white; /* Ensure the header text is white */
+    margin: 0;
+    font-size: 2em;
+}
+
+.data-content {
+    overflow-x: auto;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table th, table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #0B3A7C;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
 }
