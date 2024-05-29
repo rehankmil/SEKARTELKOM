@@ -77,6 +77,12 @@ body {
     cursor: pointer;
 }
 
+.logo-img-profile {
+    height: 40px;
+    cursor: pointer;
+    border-radius: 50% ;
+}
+
 .main-body {
     margin-top: 80px;
     padding: 20px;
@@ -207,29 +213,24 @@ body {
 
 /* Sidebar styles */
 .sidebar {
-    height: 100%;
+    height: calc(100% - 60px);
     width: 0;
     position: fixed;
-    z-index: 1001;
-    top: 0;
+    z-index: 1000;
     left: 0;
-    background-color: #0B3A7C;
+    background-color: white;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px;
 }
 
 .sidebar a {
     padding: 10px 15px;
     text-decoration: none;
-    font-size: 22px;
-    color: white;
-    display: block;
+    font-size: 32px;
+    color: gray;
+    display: flex;
+    align-items: center;
     transition: 0.3s;
-}
-
-.sidebar a:hover {
-    background-color: #3C93FC;
 }
 
 .sidebar .closebtn {
@@ -238,6 +239,48 @@ body {
     right: 25px;
     font-size: 36px;
 }
+
+.nav-icon {
+    height: 24px;
+    width: auto;
+    margin-right: 10px;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+.sidebar-nav li {
+    margin: 20px 0;
+}
+
+.sidebar-nav a {
+    color: darkgray;
+    font-weight: bold;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+    padding: 15px 20px;
+    margin: 0 10px;
+}
+
+.sidebar-nav a img {
+    height: 20px; /* Set the height of the icon */
+    width: auto; /* Ensure the width adjusts automatically */
+    margin-right: 20px; /* Add some space between the icon and text */
+}
+
+.sidebar-nav a.active {
+    background-color: #3C93FC;
+    color: white;
+    border-radius: 20px;
+    padding: 20px 20px;
+}
+
 
 
 /* Login page styles */
@@ -327,7 +370,7 @@ body {
     width: 90%;
     max-width: 1200px;
     overflow: hidden;
-    height: 90vh; /* Ensure the box does not exceed the viewport height */
+    height: 90vh;
 }
 
 .register-header {
@@ -335,17 +378,17 @@ body {
     color: white;
     padding: 40px;
     width: 40%;
-    text-align: left;
     overflow-y: auto;
 }
 
 .register-logo {
     height: 200px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .register-header h2 {
     font-size: 2.5em;
+    text-align: left;
 }
 
 .register-form {
@@ -378,7 +421,11 @@ body {
 }
 
 .register-form label {
-    text-align: left;
+    align-items: left;
+}
+
+.register-form p {
+    align-items: left;
 }
 
 .justify-text {
@@ -416,16 +463,90 @@ body {
 }
 
 
-.keluhan-container {
+/* Fitur page styles */
+.fitur-container {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: white;
     background-size: cover;
+    padding: 30px;
 }
 
+.fitur-box {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    height: auto;
+}
+
+.fitur-header {
+    background-color: #0B3A7C;
+    color: white;
+    padding: 40px;
+    width: 30%;
+    overflow-y: auto;
+}
+
+.fitur-logo {
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+.fitur-header h2 {
+    font-size: 2.5em;
+    text-align: left;
+}
+
+.fitur-form {
+    padding: 50px;
+    width: 80%;
+}
+
+.fitur-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.fitur-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #0B3A7C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.fitur-btn:hover {
+    background-color: #3C93FC;
+}
+
+.fitur-form label {
+    display: block;
+    text-align: left;
+    margin-right: 50px;
+}
+
+.fitur-form p {
+    align-items: left;
+}
+
+.fitur-radio-group {
+    display: flex;
+    gap: 15px;
+    margin: 20px 10px 50px;
+}
 
 
 /* Data page styles */
@@ -435,9 +556,9 @@ body {
     align-items: center;
     width: 100%;
     padding: 40px;
-    background-color: #E4F0FF;
-    min-height: 100vh; /* Ensure the container covers the viewport height */
-    overflow-y: auto;
+    background-color: white;
+    height: auto;
+    margin-top: 70px;
 }
 
 .data-box {
@@ -452,6 +573,7 @@ body {
 
 .data-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     background-color: #0B3A7C; /* Use the same blue color */
     color: white;
@@ -466,7 +588,7 @@ body {
 
 .data-header h2 {
     color: white; /* Ensure the header text is white */
-    margin: 0;
+    margin-left: 20px;
     font-size: 2em;
 }
 
@@ -498,4 +620,394 @@ table tr:nth-child(even) {
 
 table tr:hover {
     background-color: #ddd;
+}
+
+
+/* Profile page styles */
+.profil-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    background-color: white;
+    height: auto;
+    margin-top: 70px;
+}
+
+.profil-box {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    background-color: #E4F0FF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.profil-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #0B3A7C;
+    color: white;
+    padding: 20px;
+    width: 250px; 
+}
+
+.profil-logo {
+    height: 150px;
+    margin-bottom: 20px;
+}
+
+.profil-header h2 {
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+
+.profil-nav ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 20px;
+}
+
+.profil-nav li {
+    margin: 20px 0;
+}
+
+.profil-nav a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: smaller;
+}
+
+.profil-nav a img {
+    height: 20px;
+    width: auto;
+    margin-right: 20px; 
+}
+
+.profil-nav a:hover {
+    text-decoration: underline;
+}
+
+.profil-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.profil-section {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.profil-info-left {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.profil-info-right {
+    display: flex;
+    align-items: center;
+    margin-left: auto; 
+}
+
+.profil-picture img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profil-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20px;
+    flex: 1; /* Allow it to take available space */
+    gap: 20px;
+}
+
+.profil-details-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.profil-contact {
+    display: flex;
+    justify-content: left;
+    width: 100%;
+}
+
+.profil-contact-item {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px; /* Adjust spacing between contact items */
+}
+
+.profil-contact-item p {
+    margin: 0; /* Remove margin for contact item details */
+}
+
+.profil-icons {
+    display: flex;
+    gap: 10px; /* Adjust gap between icons */
+}
+
+.profil-icons .icon {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+.profil-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.profil-info p {
+    margin: 5px 0;
+}
+
+/* Horizontal layout for the second and third containers */
+.profil-info-horizontal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px; /* Add gap between items */
+    padding-top: 30px; /* Add space between the title and the content */
+}
+
+.profil-info-item {
+    margin-right: 20px;
+}
+
+.profil-info-item:last-child {
+    margin-right: 0;
+}
+
+.profil-info-horizontal p {
+    margin: 5px 0;
+}
+
+.profil-info-horizontal label {
+    margin: 5px 0;
+}
+
+.profil-details p {
+    margin: 5px 0;
+}
+
+.profil-contact-item {
+    margin-right: 40px;
+}
+
+.profil-contact-item:last-child {
+    margin-right: 0;
+}
+
+.ubah-button {
+    background-color: #0B3A7C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px; /* Add some margin to align with other items */
+}
+
+.ubah-button:hover {
+    background-color: #092b60;
+}
+
+.profil-button-container {
+    margin-left: auto;
+}
+
+
+/* General container styles */
+.anggota-header {
+    background-color: #0B3A7C;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.stats-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.stat-box {
+    background-color: #E4F0FF;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 22%;
+}
+
+.stat-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.stat-text h3 {
+    margin: 0;
+    font-size: 0.9em;
+    color: #0B3A7C;
+}
+
+.stat-text p {
+    margin: 5px 0 0;
+    font-size: 2em;
+    color: #0B3A7C;
+}
+
+.stat-icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.filter-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.filter-form {
+    display: flex;
+    align-items: left;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.filter-form label {
+    margin-right: 10px;
+}
+
+.filter-input {
+    margin: 0 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    background-color: #0B3A7C;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    background-color: #3C93FC;
+}
+
+.table-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.anggota-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.anggota-table th,
+.anggota-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.anggota-table th {
+    background-color: #0B3A7C;
+    color: white;
+}
+
+.anggota-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.anggota-table tr:hover {
+    background-color: #ddd;
+}
+
+
+/* STYLE KARTU */
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    background-color: white;
+    height: auto;
+    margin-top: 100px;
+}
+
+.card-box {
+    display: flex;
+    width: 550px;
+    height: 290px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.card-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.card-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    top: 300px;
+    left: 620px;
+}
+
+.card-number {
+    font-size: 1.2em;
+    font-weight: bold;
+    position: absolute;
+    top: 330px;
+    left: 620px;
 }

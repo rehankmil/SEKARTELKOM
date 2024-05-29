@@ -9,20 +9,29 @@
     <link rel="icon" href="assets/favicon.png">
 </head>
 <body>
+    <div id="sidebar" class="sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="/" class="active"><img src="../assets/dashboard.png" alt="Dashboard Icon"> Dashboard</a></li>
+                <li><a href="login.html"><img src="../assets/keluhanabu.png" alt="Keluhan Icon"> Advokasi/Konsultasi</a></li>
+                <li><a href="login.html"><img src="../assets/aspirasiabu.png" alt="Aspirasi Icon"> Aspirasi</a></li>
+            </ul>
+        </nav>
+    </div>
     <nav class="navbar">
         <div class="navbar-left">
-            <button class="menu-btn">☰</button>
+            <button class="menu-btn" onclick="toggleNav()">☰</button>
             <a href="/" class="logo-link">
                 <img src="assets/sekar.png" alt="Dashboard">
             </a>
         </div>
         <div class="nav-links">
-            <a href="tentangkami.html">Tentang Kami</a>
-            <a href="berita.html">Berita</a>
-            <a href="dokumen.html">Dokumen</a>
-            <a href="media.html">Media</a>
-            <a href="event.html">Event</a>
-            <a href="bakti.html">Bakti Pada Negeri</a>
+            <a href="login.html">Tentang Kami</a>
+            <a href="login.html">Berita</a>
+            <a href="login.html">Dokumen</a>
+            <a href="login.html">Media</a>
+            <a href="login.html">Event</a>
+            <a href="login.html">Bakti Pada Negeri</a>
         </div>
         <a href="login.html" class="logo-link">
             <img src="assets/logbut.png" alt="Login" class="logo-img">

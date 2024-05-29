@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aspirasi</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Konsultasi dan Advokasi</title>
+    <link rel="stylesheet" href="../style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/favicon.png">
+    <link rel="icon" href="../assets/favicon.png">
 </head>
 <body>
+    <div id="sidebar" class="sidebar">
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="dashboard.html"><img src="../assets/dashboardabu.png" alt="Dashboard Icon"> Dashboard</a></li>
+                <li><a href="keluhan.html" class="active"><img src="../assets/keluhan.png" alt="Keluhan Icon"> Advokasi/Konsultasi</a></li>
+                <li><a href="aspirasi.html"><img src="../assets/aspirasiabu.png" alt="Aspirasi Icon"> Aspirasi</a></li>
+                <li><a href="/"><img src="../assets/keluarabu.png" alt="Keluar Icon"> Keluar</a></li>
+            </ul>
+        </nav>
+    </div>
     <nav class="navbar">
         <div class="navbar-left">
-            <button class="menu-btn">☰</button>
+            <button class="menu-btn" onclick="toggleNav()">☰</button>
             <a href="dashboard.html" class="logo-link">
-                <img src="assets/sekar.png" alt="Dashboard">
+                <img src="../assets/sekar.png" alt="Dashboard">
             </a>
         </div>
         <div class="nav-links">
@@ -25,7 +35,7 @@
             <a href="bakti.html">Bakti Pada Negeri</a>
         </div>
         <a href="profil.html" class="logo-link">
-            <img src="assets/profil.png" alt="Login" class="logo-img">
+            <img src="../assets/pp.jpg" alt="Login" class="logo-img-profile">
         </a>
     </nav>
 
@@ -39,26 +49,26 @@
     </div>
 
     <div class="main-body">
-        <div class="keluhan-container">
-            <div class="register-box">
-                <div class="register-header">
+        <div class="fitur-container">
+            <div class="fitur-box">
+                <div class="fitur-header">
                     <a href="dashboard.html">
-                        <img src="assets/sekar2.png" alt="Logo Perusahaan" class="register-logo">
+                        <img src="../assets/sekar2.png" alt="Logo Perusahaan" class="fitur-logo">
                     </a>
-                    <h2>ASPIRASI KARYAWAN</h2>
+                    <h2>ADVOKASI KONSULTASI</h2>
                 </div>
-                <div class="register-form">
+                <div class="fitur-form">
                         <form>
                             <label for="topik">Topik</label>
-                            <select id="topik" class="register-input">
-                                <option value="organisasi-sekar">Organisasi SEKAR</option>
-                                <option value="hubungan-atasan-bawahan">Strategi/Operasional Perusahaan</option>
-                                <option value="disiplin-karyawan">Materi PKB</option>
+                            <select id="topik" class="fitur-input">
+                                <option value="remunerasi">Remunerasi</option>
+                                <option value="hubungan-atasan-bawahan">Hubungan atasan/bawahan</option>
+                                <option value="disiplin-karyawan">Disiplin karyawan</option>
                                 <option value="lainnya">Lainnya</option>
                             </select>
                         
                         <label for="tujuan">Tujuan</label>
-                        <div class="radio-group">
+                        <div class="fitur-radio-group">
                             <input type="radio" id="dpp" name="tujuan" value="dpp" onclick="handleTujuanChange(event)">
                             <label for="dpp">DPP</label>
                             <input type="radio" id="dpd" name="tujuan" value="dpd" onclick="handleTujuanChange(event)">
@@ -69,7 +79,7 @@
                         
                         <div id="dpd-dropdown" class="hidden">
                             <label for="dpd">DPD</label>
-                            <select id="dpd" class="register-input">
+                            <select id="dpd" class="fitur-input">
                                 <option value="daerah1">Daerah 1</option>
                                 <option value="daerah2">Daerah 2</option>
                                 <option value="daerah3">Daerah 3</option>
@@ -79,7 +89,7 @@
                         
                         <div id="dpw-dropdown" class="hidden">
                             <label for="dpw">DPW</label>
-                            <select id="dpw" class="register-input">
+                            <select id="dpw" class="fitur-input">
                                 <option value="kota1">Kota 1</option>
                                 <option value="kota2">Kota 2</option>
                                 <option value="kota3">Kota 3</option>
@@ -88,9 +98,9 @@
                         </div>
                         
                         <label for="deskripsi">Deskripsi</label>
-                        <textarea id="deskripsi" class="register-input" rows="5" placeholder="Masukkan deskripsi"></textarea>
+                        <textarea id="deskripsi" class="fitur-input" rows="5" placeholder="Masukkan deskripsi"></textarea>
                         
-                        <button type="submit" class="register-btn">Kirim</button>
+                        <button type="submit" class="fitur-btn">Kirim</button>
                     </form>
                 </div>
             </div>
@@ -103,6 +113,6 @@
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
