@@ -4,46 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="../assets/favicon.png">
+    <link rel="icon" href="assets/favicon.png">
 </head>
 <body>
     <div id="sidebar" class="sidebar">
         <nav class="sidebar-nav">
             <ul>
-                <li><a href="dashboard.html" class="active"><img src="../assets/dashboard.png" alt="Dashboard Icon"> Dashboard</a></li>
-                <li><a href="keluhan.html"><img src="../assets/keluhanabu.png" alt="Keluhan Icon"> Advokasi/Konsultasi</a></li>
-                <li><a href="aspirasi.html"><img src="../assets/aspirasiabu.png" alt="Aspirasi Icon"> Aspirasi</a></li>
-                <li><a href="kartu.html"><img src="../assets/kartuabu.png" alt="Kartu Icon"> Kartu Anggota</a></li>
-                <li><a href="/"><img src="../assets/keluarabu.png" alt="Keluar Icon"> Keluar</a></li>
+                <li><a href="/" class="active"><img src="../assets/dashboard.png" alt="Dashboard Icon"> Dashboard</a></li>
+                <li><a href="login.html"><img src="../assets/keluhanabu.png" alt="Keluhan Icon"> Advokasi/Konsultasi</a></li>
+                <li><a href="login.html"><img src="../assets/aspirasiabu.png" alt="Aspirasi Icon"> Aspirasi</a></li>
             </ul>
         </nav>
     </div>
     <nav class="navbar">
         <div class="navbar-left">
             <button class="menu-btn" onclick="toggleNav()">☰</button>
-            <a href="dashboard.html" class="logo-link">
-                <img src="../assets/sekar.png" alt="Dashboard">
+            <a href="/" class="logo-link">
+                <img src="assets/sekar.png" alt="Dashboard">
             </a>
         </div>
         <div class="nav-links">
-            <a href="tentangkami.html">Tentang Kami</a>
-            <a href="berita.html">Berita</a>
-            <a href="dokumen.html">Dokumen</a>
-            <a href="media.html">Media</a>
-            <a href="event.html">Event</a>
-            <a href="bakti.html">Bakti Pada Negeri</a>
+            <a href="login.html">Tentang Kami</a>
+            <a href="login.html">Berita</a>
+            <a href="login.html">Dokumen</a>
+            <a href="login.html">Media</a>
+            <a href="login.html">Event</a>
+            <a href="login.html">Bakti Pada Negeri</a>
         </div>
-        <a href="profil.html" class="logo-link">
-            <img src="../assets/pp.jpg" alt="Login" class="logo-img-profile">
+        <a href="login.html" class="logo-link">
+            <img src="assets/logbut.png" alt="Login" class="logo-img">
         </a>
     </nav>
-    
     <div class="main-body">
         <div class="news-section">
             <div class="news-item large">
-                <img src="../assets/berita1.png" alt="News Image 1" class="news-image">
+                <img src="assets/berita1.png" alt="News Image 1" class="news-image">
                 <div class="news-content">
                     <h3>SEKAR Kritisi Pengalihan Aset Infrastruktur Network</h3>
                     <p class="news-meta">Pusat Berita | 26 Januari 2024</p>
@@ -65,14 +62,14 @@
             </div>
             <div class="news-column">
                 <div class="news-item small">
-                    <img src="../assets/berita2.png" alt="News Image 2" class="news-image">
+                    <img src="assets/berita2.png" alt="News Image 2" class="news-image">
                     <div class="news-content">
                         <h3>HUT Sekar Telkom ke-21 : Ready for DigiTelco Transformation in Next Normal Era</h3>
                         <p class="news-meta">Bidang Hubungan Antar Lembaga | 01 Maret 2021</p>
                     </div>
                 </div>
                 <div class="news-item small">
-                    <img src="../assets/berita3.png" alt="News Image 3" class="news-image">
+                    <img src="assets/berita3.png" alt="News Image 3" class="news-image">
                     <div class="news-content">
                         <h3>Penandatanganan PKB VIII</h3>
                         <p class="news-meta">Bidang Hubungan Antar Lembaga | 14 October 2020</p>
@@ -82,11 +79,11 @@
         </div>
     </div>
     <div class="footer">
-    <img src="../assets/bottom.png" alt="Footer Image" class="footer-image">
+    <img src="assets/bottom.png" alt="Footer Image" class="footer-image">
     <div class="footer-content">
         <div class="footer-section">
             <p><strong>Didukung oleh:</strong></p>
-            <img src="../assets/telkom.png" alt="Telkom Logo" class="footer-logo">
+            <img src="assets/telkom.png" alt="Telkom Logo" class="footer-logo">
         </div>
         <div class="footer-section">
             <p><strong>Links:</strong></p>
@@ -110,6 +107,6 @@
     </div>
 </div>
 
-<script src="../script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

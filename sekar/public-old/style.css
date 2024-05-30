@@ -6,121 +6,9 @@
     box-sizing: border-box;
 }
 
-/* body {
-    font-family: 'Inter', sans-serif;
-} */
-
-h2 {
-    text-align: left;
-}
-
 body {
     font-family: 'Inter', sans-serif;
-    margin: 0;
-    padding: 0;
 }
-
-header {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: left;
-}
-
-nav.button {
-    margin-top: 10px;
-}
-
-button {
-    padding: 10px 20px;
-    margin: 0 5px;
-    border: none;
-    border-radius: 20px;
-    background-color: #ddd;
-    cursor: pointer;
-}
-
-button.active {
-    background-color: #0B3A7C;
-    color: white;
-}
-
-main {
-    padding: 20px;
-}
-
-.content {
-    display: none;
-    min-height: 300px; /* Menyediakan panjang minimal */
-    padding: 20px;
-}
-
-.content.active {
-    display: block;
-    text-align: left;
-}
-
-.content p {
-    margin-bottom: 10px;
-}
-
-.profil-content {
-    display: flex;
-    align-items: center; /* Posisi vertikal tengah */
-}
-
-.profil-text {
-    flex: 1; /* Membuat teks mengambil ruang tersisa */
-}
-
-.profil-image {
-    flex-shrink: 0; /* Gambar tidak akan mengecil */
-    margin-left: 20px; /* Jarak antara teks dan gambar */
-}
-
-.profil-image img {
-    max-width: 100%; /* Gambar tidak melebihi lebar parent */
-    height: auto; /* Tinggi gambar menyesuaikan proporsi */
-}
-
-.all-news-list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Menampilkan tiga berita per baris */
-    gap: 20px; /* Jarak antara berita */
-}
-
-.all-news-list .news-item {
-    display: flex;
-    flex-direction: column;
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
-}
-
-.all-news-list .news-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.all-news-list .news-content {
-    background-color: rgba(11, 58, 124, 0.7); /* Warna biru dengan tingkat transparansi */
-    color: #fff; /* Warna teks */
-    padding: 20px;
-    box-sizing: border-box;
-    flex: 1; /* Memenuhi sisa ruang di dalam kontainer flex */
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end; /* Menempatkan judul dan meta di bagian bawah */
-}
-
-.all-news-list .news-content h3 {
-    margin-bottom: 10px;
-    font-size: 1em; /* Ukuran font judul berita kecil */
-}
-
-
 
 .navbar {
     display: flex;
@@ -201,35 +89,27 @@ main {
     text-align: center;
 }
 
-/* NEWS */
-.news-wrapper {
-    padding: 50px;
-}
-
 .news-section {
     display: flex;
+    justify-content: space-between;
     gap: 20px;
 }
 
-.news-main {
-    flex: 3;
-}
-
-.news-sidebar {
-    flex: 2;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.news-column {
+    display: flex;
+    flex-direction: column;
     gap: 20px;
 }
 
 .news-item {
-    position: relative;
+    background-color: #f1f1f1;
     border-radius: 10px;
     overflow: hidden;
+    position: relative;
 }
 
 .news-item.large {
-    flex: 1;
+    flex: 2;
 }
 
 .news-item.small {
@@ -240,19 +120,11 @@ main {
     width: 100%;
     height: auto;
     display: block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
 }
 
 .news-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: rgba(11, 58, 124, 0.7); /* Warna biru dengan tingkat transparansi */
-    color: #fff; /* Warna teks */
     padding: 20px;
-    box-sizing: border-box;
+    position: relative;
 }
 
 .news-content h3 {
@@ -260,17 +132,18 @@ main {
 }
 
 .news-meta {
-    font-size: 0.7em;
+    font-size: 0.9em;
+    color: #666;
     margin-bottom: 10px;
 }
 
 .news-summary {
-    font-size: 0.7em;
+    font-size: 1em;
     text-align: justify;
 }
 
 .news-summary a {
-    color: #fff;
+    color: #0B3A7C;
     text-decoration: none;
 }
 
@@ -278,196 +151,7 @@ main {
     text-decoration: underline;
 }
 
-/* MEDIA */
-/* body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
 
-.media-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    min-height: 300px;
-}
-
-/* header h1 {
-    text-align: center;
-    margin-bottom: 20px;
-} */
-
-.highlight-section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-bottom: 40px;
-}
-
-.highlight-text {
-    padding: 10px;
-    display: flex; flex-direction: column; justify-content: center;
-}
-
-.arrow {
-    background-color: rgba(0, 0, 0, 0.5);
-    border: none;
-    color: white;
-    padding: 10px;
-    cursor: pointer;
-    z-index: 1;
-}
-
-.left-arrow {
-    position: absolute;
-    left: 0;
-}
-
-.right-arrow {
-    position: absolute;
-    right: 0;
-}
-
-.highlight-content {
-    display: flex;
-    overflow: hidden;
-    width: 100%;
-}
-
-.highlight-item {
-    min-width: 100%;
-    transition: transform 0.5s ease;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-}
-
-.highlight-item.active {
-    display: flex;
-}
-
-.highlight-item img {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.highlight-caption {
-    text-align: center;
-    margin-top: 10px;
-}
-
-.gallery-section {
-    margin-top: 20px;
-}
-
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-}
-
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* EVENT */
-
-.event-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.section {
-    margin-bottom: 40px;
-}
-
-.event {
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.event img {
-    width: 50%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-right: 20px;
-}
-
-.event-details {
-    flex: 1;
-    text-align: left;
-}
-
-.event-details h2 {
-    margin: 0;
-    font-size: 1.5em;
-}
-
-.event-details p {
-    margin: 10px 0 0 0;
-}
-
-.register-button {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background-color: #0B3A7C;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.register-button:hover {
-    background-color: #095bb5;
-}
-
-.history-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
-}
-
-.history-item {
-    background-color: #f1f1f1;
-    border-radius: 10px;
-    overflow: hidden;
-    text-align: center;
-    width: 200px; /* Ukuran tetap */
-    height: 300px; /* Ukuran tetap */
-}
-
-.history-item img {
-    width: 100%;
-    /* height: 100%; */
-    height: 120px;
-    object-fit: cover;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-}
-
-.history-item h3 {
-    margin: 10px;
-    font-size: 1.2em;
-}
-
-.history-item p {
-    margin: 0 10px 10px;
-}
 
 /* FOOTER */
 .footer {
