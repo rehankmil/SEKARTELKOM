@@ -33,7 +33,7 @@
             <a href="/dokumen">Dokumen</a>
             <a href="/media">Media</a>
             <a href="/event">Event</a>
-            <a href="/bakti">Bakti Pada Negeri</a>
+            <a href="/bakti">Bakti Bagi Negeri</a>
         </div>
         <a href="/profil" class="logo-link">
             <img src="../assets/ppanggota.png" alt="Login" class="logo-img-profile">
@@ -47,7 +47,7 @@
                 <div class="news-item large">
                     <img src="../assets/berita1.png" alt="Large News Image" class="news-image">
                     <div class="news-content">
-                        <h3>Judul Berita Besar</h3>
+                        <h3>Sekar Kritisi Pengalihan Aset Infrastruktur Network</h3>
                         <div class="news-meta">Tanggal dan Kategori</div>
                         <div class="news-summary">
                             Menanggapi situasi yang berkembang perihal Transformasi 5 Bold Moves yang dilakukan
@@ -66,28 +66,28 @@
                 <div class="news-item small">
                     <img src="../assets/berita2.png" alt="Small News Image 1" class="news-image">
                     <div class="news-content">
-                        <h3>Judul Berita Kecil 1</h3>
+                        <h3>HUT Sekar Telkom ke-21 : Ready for DigiTelco Transformation in Next Normal Era</h3>
                         <div class="news-meta">Tanggal dan Kategori</div>
                     </div>
                 </div>
                 <div class="news-item small">
                     <img src="../assets/berita3.png" alt="Small News Image 2" class="news-image">
                     <div class="news-content">
-                        <h3>Judul Berita Kecil 2</h3>
+                        <h3>Penandatanganan PKB VIII</h3>
                         <div class="news-meta">Tanggal dan Kategori</div>
                     </div>
                 </div>
                 <div class="news-item small">
                     <img src="../assets/evaluasi_program_walipohon.jpeg" alt="Small News Image 3" class="news-image">
                     <div class="news-content">
-                        <h3>Judul Berita Kecil 3</h3>
+                        <h3>Evaluasi Program Walipohon</h3>
                         <div class="news-meta">Tanggal dan Kategori</div>
                     </div>
                 </div>
                 <div class="news-item small">
                     <img src="../assets/bbn_kal.jpeg" alt="Small News Image 4" class="news-image">
                     <div class="news-content">
-                        <h3>Judul Berita Kecil 4</h3>
+                        <h3>Direksi Telkom Sumbang BBN 5000 buah buku</h3>
                         <div class="news-meta">Tanggal dan Kategori</div>
                     </div>
                 </div>

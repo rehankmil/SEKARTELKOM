@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bakti Pada Negeri</title>
+    <title>Bakti Bagi Negeri</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../assets/favicon.png">
@@ -33,7 +33,7 @@
             <a href="/dokumen">Dokumen</a>
             <a href="/media">Media</a>
             <a href="/event">Event</a>
-            <a href="/bakti">Bakti Pada Negeri</a>
+            <a href="/bakti">Bakti Bagi Negeri</a>
         </div>
         <a href="/profil" class="logo-link">
             <img src="../assets/ppanggota.png" alt="Login" class="logo-img-profile">

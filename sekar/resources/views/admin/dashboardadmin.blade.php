@@ -13,7 +13,7 @@
         <nav class="sidebar-nav">
             <ul>
                 <li><a href="/dashboardadmin" class="active"><img src="../assets/dashboard.png" alt="Dashboard Icon"> Dashboard</a></li>
-                <li><a href="/dataaanggota"><img src="../assets/anggotaabu.png" alt="Anggota Icon"> Data Anggota</a></li>
+                <li><a href="/dataanggota"><img src="../assets/anggotaabu.png" alt="Anggota Icon"> Data Anggota</a></li>
                 <li><a href="/datakeluhan"><img src="../assets/keluhanabu.png" alt="Keluhan Icon"> Data Advokasi/Konsultasi</a></li>
                 <li><a href="/dataaspirasi"><img src="../assets/aspirasiabu.png" alt="Aspirasi Icon"> Data Aspirasi</a></li>
                 <li><a href="/"><img src="../assets/keluarabu.png" alt="Keluar Icon"> Keluar</a></li>
@@ -46,7 +46,7 @@
                 <div class="news-item large">
                     <img src="../assets/berita1.png" alt="Large News Image" class="news-image">
                     <div class="news-content">
-                        <h3>Judul Berita Besar</h3>
+                        <h3>Sekar Kritisi Pengalihan Aset Infrastruktur Network</h3>
                         <div class="news-meta">Tanggal dan Kategori</div>
                         <div class="news-summary">
                             Menanggapi situasi yang berkembang perihal Transformasi 5 Bold Moves yang dilakukan
@@ -65,28 +65,82 @@
                 <div class="news-item small">
                     <img src="../assets/berita2.png" alt="Small News Image 1" class="news-image">
                     <div class="news-content">
-                        <h3>Judul Berita Kecil 1</h3>
+                        <h3>HUT Sekar Telkom ke-21 : Ready for DigiTelco Transformation in Next Normal Era</h3>
                         <div class="news-meta">Tanggal dan Kategori</div>
                     </div>
                 </div>
                 <div class="news-item small">
                     <img src="../assets/berita3.png" alt="Small News Image 2" class="news-image">
                     <div class="news-content">
-                        <h3>Judul Berita Kecil 2</h3>
+                        <h3>Penandatanganan PKB VIII</h3>
                         <div class="news-meta">Tanggal dan Kategori</div>
                     </div>
                 </div>
                 <div class="news-item small">
                     <img src="../assets/evaluasi_program_walipohon.jpeg" alt="Small News Image 3" class="news-image">
                     <div class="news-content">
-                        <h3>Judul Berita Kecil 3</h3>
+                        <h3>Evaluasi Program Walipohon</h3>
                         <div class="news-meta">Tanggal dan Kategori</div>
                     </div>
                 </div>
                 <div class="news-item small">
                     <img src="../assets/bbn_kal.jpeg" alt="Small News Image 4" class="news-image">
                     <div class="news-content">
-                        <h3>Judul Berita Kecil 4</h3>
+                        <h3>Direksi Telkom Sumbang BBN 5000 buah buku</h3>
+                        <div class="news-meta">Tanggal dan Kategori</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>    <div class="main-body">
+        <div class="news-wrapper">
+        <div class="news-section">
+            <div class="news-main">
+                <div class="news-item large">
+                    <img src="../assets/berita1.png" alt="Large News Image" class="news-image">
+                    <div class="news-content">
+                        <h3>Sekar Kritisi Pengalihan Aset Infrastruktur Network</h3>
+                        <div class="news-meta">Tanggal dan Kategori</div>
+                        <div class="news-summary">
+                            Menanggapi situasi yang berkembang perihal Transformasi 5 Bold Moves yang dilakukan
+                                            PT.Telkom sebagai upaya untuk menumbuhkan perusahaan, dan salah satu strategi yang akan 
+                                            dilakukan adalah pembentukan infraco (PT.Telkom Infratruktur Indonesia) dengan akan melakukan 
+                                            transfer aset infrastruktur PT.Telkom ke dalam anak perusahaan tersebut. 
+                                            Sehubungan dengan hal tsb, Sekar Telkom telah melakukan beberapa kali audiensi dengan 
+                                            Manajemen PT. Telkom (Direksi) dan kami juga telah beberapa kali menyampaikan masukan dan 
+                                            aspirasi Karyawan kepada Manajemen (Direksi dan Dewan Komisaris), namun belum menemui kesepahaman. <br><br>
+                        <a href="#">Baca selengkapnya...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="news-sidebar">
+                <div class="news-item small">
+                    <img src="../assets/berita2.png" alt="Small News Image 1" class="news-image">
+                    <div class="news-content">
+                        <h3>HUT Sekar Telkom ke-21 : Ready for DigiTelco Transformation in Next Normal Era</h3>
+                        <div class="news-meta">Tanggal dan Kategori</div>
+                    </div>
+                </div>
+                <div class="news-item small">
+                    <img src="../assets/berita3.png" alt="Small News Image 2" class="news-image">
+                    <div class="news-content">
+                        <h3>Penandatanganan PKB VIII</h3>
+                        <div class="news-meta">Tanggal dan Kategori</div>
+                    </div>
+                </div>
+                <div class="news-item small">
+                    <img src="../assets/evaluasi_program_walipohon.jpeg" alt="Small News Image 3" class="news-image">
+                    <div class="news-content">
+                        <h3>Evaluasi Program Walipohon</h3>
+                        <div class="news-meta">Tanggal dan Kategori</div>
+                    </div>
+                </div>
+                <div class="news-item small">
+                    <img src="../assets/bbn_kal.jpeg" alt="Small News Image 4" class="news-image">
+                    <div class="news-content">
+                        <h3>Direksi Telkom Sumbang BBN 5000 buah buku</h3>
                         <div class="news-meta">Tanggal dan Kategori</div>
                     </div>
                 </div>
@@ -107,7 +161,7 @@
             <a href="#">Berita</a>
             <a href="#">Media</a>
             <a href="#">Event</a>
-            <a href="#">Bakti Pada Negeri</a>
+            <a href="#">Bakti Bagi Negeri</a>
         </div>
         <div class="footer-section">
             <p><strong>Contact Us:</strong></p>

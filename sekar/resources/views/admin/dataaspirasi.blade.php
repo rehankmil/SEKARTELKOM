@@ -33,7 +33,7 @@
             <a href="#">Dokumen</a>
             <a href="#">Media</a>
             <a href="#">Event</a>
-            <a href="#">Bakti Pada Negeri</a>
+            <a href="#">Bakti Bagi Negeri</a>
         </div>
         <a href="\profiladmin" class="logo-link">
             <img src="../assets/ppadmin.png" alt="Login" class="logo-img-profile">

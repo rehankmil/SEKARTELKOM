@@ -33,7 +33,7 @@
             <a href="/dokumen">Dokumen</a>
             <a href="/media">Media</a>
             <a href="/event">Event</a>
-            <a href="/bakti">Bakti Pada Negeri</a>
+            <a href="/bakti">Bakti Bagi Negeri</a>
         </div>
         <a href="/profil" class="logo-link">
             <img src="../assets/ppanggota.png" alt="Login" class="logo-img-profile">

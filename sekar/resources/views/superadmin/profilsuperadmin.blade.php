@@ -13,7 +13,7 @@
         <nav class="sidebar-nav">
             <ul>
                 <li><a href="/dashboardsuperadmin" class="active"><img src="../assets/dashboard.png" alt="Dashboard Icon"> Dashboard</a></li>
-                <li><a href="/dataaanggota"><img src="../assets/anggotaabu.png" alt="Anggota Icon"> Data Anggota</a></li>
+                <li><a href="/dataanggota"><img src="../assets/anggotaabu.png" alt="Anggota Icon"> Data Anggota</a></li>
                 <li><a href="/datakeluhan"><img src="../assets/keluhanabu.png" alt="Keluhan Icon"> Data Advokasi/Konsultasi</a></li>
                 <li><a href="/dataaspirasi"><img src="../assets/aspirasiabu.png" alt="Aspirasi Icon"> Data Aspirasi</a></li>
                 <li><a href="#"><img src="../assets/beritaabu.png" alt="Aspirasi Icon"> Data Berita</a></li>
@@ -35,7 +35,7 @@
             <a href="#">Dokumen</a>
             <a href="#">Media</a>
             <a href="#">Event</a>
-            <a href="#">Bakti Pada Negeri</a>
+            <a href="#">Bakti Bagi Negeri</a>
         </div>
         <a href="/profiladmin" class="logo-link">
             <img src="../assets/ppsuperadmin.png" alt="Login" class="logo-img-profile">
