@@ -36,7 +36,7 @@
             <a href="/bakti">Bakti Pada Negeri</a>
         </div>
         <a href="/profil" class="logo-link">
-            <img src="../assets/pp.jpg" alt="Login" class="logo-img-profile">
+            <img src="../assets/ppanggota.png" alt="Login" class="logo-img-profile">
         </a>
     </nav>
     <div class="main-body">

@@ -75,6 +75,10 @@ Route::get('/dataaspirasi', function () {
     return view('admin/dataaspirasi');
 });
 
+Route::get('/dashboardsuperadmin', function () {
+    return view('superadmin/dashboardsuperadmin');
+});
+
 Route::get('/dashboardadmin', function () {
     return view('admin/dashboardadmin');
 });
@@ -85,6 +89,14 @@ Route::get('/dashboard', function () {
 
 Route::get('/profil', function () {
     return view('users/profil');
+});
+
+Route::get('/profilsuperadmin', function () {
+    return view('superadmin/profilsuperadmin');
+});
+
+Route::get('/approve', function () {
+    return view('superadmin/approve');
 });
 
 Route::get('/kartu', function () {

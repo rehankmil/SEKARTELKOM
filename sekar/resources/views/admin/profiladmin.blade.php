@@ -36,7 +36,7 @@
             <a href="#">Bakti Pada Negeri</a>
         </div>
         <a href="/profiladmin" class="logo-link">
-            <img src="../assets/admin.jpg" alt="Login" class="logo-img-profile">
+            <img src="../assets/ppadmin.png" alt="Login" class="logo-img-profile">
         </a>
     </nav>
     <div class="profil-container">
@@ -58,12 +58,12 @@
                 <div class="profil-section">
                     <div class="profil-info-left">
                         <div class="profil-picture">
-                            <img src="../assets/admin.jpg" alt="Profile Picture">
+                            <img src="../assets/ppadmin.png" alt="Profile Picture">
                         </div>
                         <div class="profil-details">
                             <div class="profil-details-item">
-                                <h3>Wujud Aseli Atmin</h3>
-                                <p>Admin</p>
+                                <h3>Nama Admin</h3>
+                                <p>Administrator</p>
                             </div>
                             <div class="profil-contact">
                                 <div class="profil-contact-item">
@@ -79,7 +79,7 @@
                         <div class="profil-info-right">
                             <div class="profil-icons">
                                 <img src="../assets/kartu.png" alt="ATM Icon" class="icon">
-                                <img src="../assets/ubah.png" alt="Edit Icon" class="icon">
+                                <img src="../assets/keluaritem.png" alt="Edit Icon" class="icon">
                             </div>
                         </div>
                     </div>

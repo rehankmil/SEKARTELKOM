@@ -91,3 +91,21 @@ function prevHighlight() {
 document.addEventListener('DOMContentLoaded', () => {
     showHighlight(currentIndex);
 });
+
+
+// JavaScript to handle the popup
+function showPopup() {
+    document.getElementById('popup').style.display = 'block';
+}
+
+function closePopup() {
+    document.getElementById('popup').style.display = 'none';
+}
+
+// Close the popup when clicking outside of it
+window.onclick = function(event) {
+    var popup = document.getElementById('popup');
+    if (event.target == popup) {
+        popup.style.display = 'none';
+    }
+}

@@ -28,6 +28,7 @@
             <div class="dis">
                 <a href="/dashboard">users</a>
                 <a href="/dashboardadmin">admin</a>
+                <a href="/dashboardsuperadmin">superadmin</a>
             </div>
             </form>
             <p>Belum punya Akun? <a href="/register">Daftar Sini</a></p>

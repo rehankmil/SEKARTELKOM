@@ -12,10 +12,12 @@
     <div id="sidebar" class="sidebar">
         <nav class="sidebar-nav">
             <ul>
-                <li><a href="/dashboardadmin" class="active"><img src="../assets/dashboard.png" alt="Dashboard Icon"> Dashboard</a></li>
+                <li><a href="/dashboardsuperadmin" class="active"><img src="../assets/dashboard.png" alt="Dashboard Icon"> Dashboard</a></li>
                 <li><a href="/dataaanggota"><img src="../assets/anggotaabu.png" alt="Anggota Icon"> Data Anggota</a></li>
                 <li><a href="/datakeluhan"><img src="../assets/keluhanabu.png" alt="Keluhan Icon"> Data Advokasi/Konsultasi</a></li>
                 <li><a href="/dataaspirasi"><img src="../assets/aspirasiabu.png" alt="Aspirasi Icon"> Data Aspirasi</a></li>
+                <li><a href="#"><img src="../assets/beritaabu.png" alt="Aspirasi Icon"> Data Berita</a></li>
+                <li><a href="#"><img src="../assets/dokumenabu.png" alt="Aspirasi Icon"> Data Dokumen</a></li>
                 <li><a href="/"><img src="../assets/keluarabu.png" alt="Keluar Icon"> Keluar</a></li>
             </ul>
         </nav>
@@ -23,7 +25,7 @@
     <nav class="navbar">
         <div class="navbar-left">
             <button class="menu-btn" onclick="toggleNav()">☰</button>
-            <a href="/dashboardadmin" class="logo-link">
+            <a href="/dashboardsuperadmin" class="logo-link">
                 <img src="../assets/sekar.png" alt="Dashboard">
             </a>
         </div>
@@ -35,8 +37,8 @@
             <a href="#">Event</a>
             <a href="#">Bakti Pada Negeri</a>
         </div>
-        <a href="/profiladmin" class="logo-link">
-            <img src="../assets/ppadmin.png" alt="Login" class="logo-img-profile">
+        <a href="/profilsuperadmin" class="logo-link">
+            <img src="../assets/ppsuperadmin.png" alt="Login" class="logo-img-profile">
         </a>
     </nav>
     <div class="main-body">
