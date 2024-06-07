@@ -18,24 +18,7 @@
             </ul>
         </nav>
     </div>
-    <nav class="navbar">
-        <div class="navbar-left">
-            <button class="menu-btn" onclick="toggleNav()">☰</button>
-            <a href="/" class="logo-link">
-                <img src="assets/sekar.png" alt="Dashboard">
-            </a>
-        </div>
-        <div class="nav-links">
-            <a href="/login">Tentang Kami</a>
-            <a href="/login">Berita</a>
-            <a href="/login">Media</a>
-            <a href="/login">Event</a>
-            <a href="/login">Bakti Bagi Negeri</a>
-        </div>
-        <a href="/login" class="logo-link">
-            <img src="assets/logbut.png" alt="Login" class="logo-img">
-        </a>
-    </nav>
+    <x-navbar-landingpage></x-navbar-landingpage>
     <div class="main-body">
         <div class="news-wrapper">
         <div class="news-section">
@@ -62,7 +45,7 @@
                 <div class="news-item small">
                     <img src="../assets/berita2.png" alt="Small News Image 1" class="news-image">
                     <div class="news-content">
-                        <h4>HUT Sekar Telkom ke-21 : Ready for DigiTelco Transformation in Next Normal Era</h4>
+                        <h3>HUT Sekar Telkom ke-21 : Ready for DigiTelco Transformation in Next Normal Era</h3>
                         <div class="news-meta">Tanggal dan Kategori</div>
                     </div>
                 </div>

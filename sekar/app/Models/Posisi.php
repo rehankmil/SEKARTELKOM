@@ -11,12 +11,9 @@ class Posisi extends Model
 
     protected $table = 'posisi';
     protected $primaryKey = 'id_posisi';
-    protected $fillable = [
-        'nama'
-    ];
 
-    public function pengguna()
+    public function users()
     {
-        return $this->hasMany(Pengguna::class, 'id_posisi', 'id_posisi');
+        return $this->hasMany(User::class, 'id_posisi');
     }
 }

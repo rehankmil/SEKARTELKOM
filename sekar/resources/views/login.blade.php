@@ -16,20 +16,15 @@
             </a>
             <h2>Masuk Ke Akun Anda</h2>
             <form method="POST" action="{{ route('login') }}">
-            @csrf
-            <input type="text" name="nik" placeholder="Nomor Induk Karyawan" class="login-input">
-            <input type="password" name="password" placeholder="Kata Sandi" class="login-input">
-            <button type="submit" class="login-btn">Login</button>
-            @if ($errors->has('loginError'))
-                <div class="alert">
-                    {{ $errors->first('loginError') }}
-                </div>
-            @endif
-            <div class="dis">
-                <a href="/dashboard">users</a>
-                <a href="/dashboardadmin">admin</a>
-                <a href="/dashboardsuperadmin">superadmin</a>
-            </div>
+                @csrf
+                <input type="text" name="nik" placeholder="Nomor Induk Karyawan" class="login-input" value="{{ old('nik') }}">
+                <input type="password" name="password" placeholder="Kata Sandi" class="login-input">
+                <button type="submit" class="login-btn">Login</button>
+                @if ($errors->has('loginError'))
+                    <div class="alert">
+                        {{ $errors->first('loginError') }}
+                    </div>
+                @endif
             </form>
             <p>Belum punya Akun? <a href="/register">Daftar Sini</a></p>
         </div>

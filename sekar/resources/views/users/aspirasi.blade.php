@@ -9,46 +9,7 @@
     <link rel="icon" href="../assets/favicon.png">
 </head>
 <body>
-    <div id="sidebar" class="sidebar">
-        <nav class="sidebar-nav">
-         <ul>
-                <li><a href="/dashboard" class="active"><img src="../assets/dashboard.png" alt="Dashboard Icon"> Dashboard</a></li>
-                <li><a href="/keluhan"><img src="../assets/keluhanabu.png" alt="Keluhan Icon"> Advokasi/Konsultasi</a></li>
-                <li><a href="/aspirasi"><img src="../assets/aspirasiabu.png" alt="Aspirasi Icon"> Aspirasi</a></li>
-                <li><a href="/kartu"><img src="../assets/kartuabu.png" alt="Kartu Icon"> Kartu Anggota</a></li>
-                <li><a href="/"><img src="../assets/keluarabu.png" alt="Keluar Icon"> Keluar</a></li>
-            </ul>
-        </nav>
-    </div>
-    <nav class="navbar">
-        <div class="navbar-left">
-            <button class="menu-btn" onclick="toggleNav()">☰</button>
-            <a href="/dashboard" class="logo-link">
-                <img src="../assets/sekar.png" alt="Dashboard">
-            </a>
-        </div>
-        <div class="nav-links">
-            <a href="/tentangkami">Tentang Kami</a>
-            <a href="/berita">Berita</a>
-            <a href="/dokumen">Dokumen</a>
-            <a href="/media">Media</a>
-            <a href="/event">Event</a>
-            <a href="/bakti">Bakti Bagi Negeri</a>
-        </div>
-        <a href="/profil" class="logo-link">
-            <img src="../assets/ppanggota.png" alt="Login" class="logo-img-profile">
-        </a>
-    </nav>
-
-    <div id="sidebar" class="sidebar">
-        <a href="#">Tentang Kami</a>
-        <a href="#">Berita</a>
-        <a href="#">Dokumen</a>
-        <a href="#">Media</a>
-        <a href="#">Event</a>
-        <a href="#">Bakti Pada Negeri</a>
-    </div>
-
+    <x-navbar-users></x-navbar-users>
     <div class="main-body">
         <div class="fitur-container">
             <div class="fitur-box">
@@ -59,50 +20,54 @@
                     <h2>ASPIRASI KARYAWAN</h2>
                 </div>
                 <div class="fitur-form">
-                        <form>
-                            <label for="topik">Topik</label>
-                            <select id="topik" class="fitur-input">
-                                <option value="organisasi-sekar">Organisasi SEKAR</option>
-                                <option value="hubungan-atasan-bawahan">Strategi/Operasional Perusahaan</option>
-                                <option value="disiplin-karyawan">Materi PKB</option>
-                                <option value="lainnya">Lainnya</option>
-                            </select>
-                        
-                        <label for="tujuan">Tujuan</label>
-                        <div class="fitur-radio-group">
-                            <input type="radio" id="dpp" name="tujuan" value="dpp" onclick="handleTujuanChange(event)">
-                            <label for="dpp">DPP</label>
-                            <input type="radio" id="dpd" name="tujuan" value="dpd" onclick="handleTujuanChange(event)">
-                            <label for="dpd">DPD</label>
-                            <input type="radio" id="dpw" name="tujuan" value="dpw" onclick="handleTujuanChange(event)">
-                            <label for="dpw">DPW</label>
-                        </div>
-                        
-                        <div id="dpd-dropdown" class="hidden">
-                            <label for="dpd">DPD</label>
-                            <select id="dpd" class="fitur-input">
-                                <option value="daerah1">Daerah 1</option>
-                                <option value="daerah2">Daerah 2</option>
-                                <option value="daerah3">Daerah 3</option>
-                                <!-- Tambahkan opsi lainnya sesuai kebutuhan -->
-                            </select>
-                        </div>
-                        
-                        <div id="dpw-dropdown" class="hidden">
-                            <label for="dpw">DPW</label>
-                            <select id="dpw" class="fitur-input">
-                                <option value="kota1">Kota 1</option>
-                                <option value="kota2">Kota 2</option>
-                                <option value="kota3">Kota 3</option>
-                                <!-- Tambahkan opsi lainnya sesuai kebutuhan -->
-                            </select>
-                        </div>
-                        
-                        <label for="deskripsi">Deskripsi</label>
-                        <textarea id="deskripsi" class="fitur-input" rows="5" placeholder="Masukkan deskripsi"></textarea>
-                        
-                        <button type="submit" class="fitur-btn">Kirim</button>
-                    </form>
+                <form>
+                    <label for="topik">Topik</label>
+                    <select id="topik" class="fitur-input">
+                        <option value="organisasi-sekar">Organisasi SEKAR</option>
+                        <option value="hubungan-atasan-bawahan">Strategi/Operasional Perusahaan</option>
+                        <option value="disiplin-karyawan">Materi PKB</option>
+                        <option value="lainnya">Lainnya</option>
+                    </select>
+                    
+                    <label for="tujuan">Tujuan</label>
+                    <div class="fitur-radio-group">
+                        <input type="radio" id="dpp" name="tujuan" value="dpp">
+                        <label for="dpp">DPP</label>
+                        <input type="radio" id="dpw" name="tujuan" value="dpw">
+                        <label for="dpw">DPW</label>
+                        <input type="radio" id="dpd" name="tujuan" value="dpd">
+                        <label for="dpd">DPD</label>
+                    </div>
+                    
+                    <div id="dpw-dropdown" class="hidden">
+                        <label for="dpw-select">DPW</label>
+                        <select id="dpw-select" class="fitur-input">
+                            <option value="Sumatera">DPW Sumatera</option>
+                            <option value="Jakarta 1">DPW Jakarta 1</option>
+                            <option value="Jakarta 2">DPW Jakarta 2</option>
+                            <option value="Jawa Barat 1">DPW Jawa Barat 1</option>
+                            <option value="Jawa Barat 2">DPW Jawa Barat 2</option>
+                            <option value="Jawa Tengah dan DIY">DPW Jawa Tengah dan DIY</option>
+                            <option value="Jawa Timur">DPW Jawa Timur</option>
+                            <option value="Kalimantan">DPW Kalimantan</option>
+                            <option value="KTI">DPW KTI</option>
+                        </select>
+                    </div>
+                    
+                    <div id="dpd-dropdown" class="hidden">
+                        <label for="dpd-select">DPD</label>
+                        <select id="dpd-select" class="fitur-input">
+                            <option value="daerah1">DPD 1</option>
+                            <option value="daerah2">DPD 2</option>
+                            <option value="daerah3">DPD 3</option>
+                        </select>
+                    </div>
+                    
+                    <label for="deskripsi">Deskripsi</label>
+                    <textarea id="deskripsi" class="fitur-input" rows="10" placeholder="Masukkan deskripsi"></textarea>
+                    
+                    <button type="submit" class="fitur-btn">Kirim</button>
+                </form>
                 </div>
             </div>
         </div>

@@ -9,35 +9,7 @@
     <link rel="icon" href="../assets/favicon.png">
 </head>
 <body>
-    <div id="sidebar" class="sidebar">
-        <nav class="sidebar-nav">
-            <ul>
-                <li><a href="/dashboard" class="active"><img src="../assets/dashboard.png" alt="Dashboard Icon"> Dashboard</a></li>
-                <li><a href="/keluhan"><img src="../assets/keluhanabu.png" alt="Keluhan Icon"> Advokasi/Konsultasi</a></li>
-                <li><a href="/aspirasi"><img src="../assets/aspirasiabu.png" alt="Aspirasi Icon"> Aspirasi</a></li>
-                <li><a href="/"><img src="../assets/keluarabu.png" alt="Keluar Icon"> Keluar</a></li>
-            </ul>
-        </nav>
-    </div>
-    <nav class="navbar">
-        <div class="navbar-left">
-            <button class="menu-btn" onclick="toggleNav()">☰</button>
-            <a href="/dashboard" class="logo-link">
-                <img src="../assets/sekar.png" alt="Dashboard">
-            </a>
-        </div>
-        <div class="nav-links">
-            <a href="/tentangkami">Tentang Kami</a>
-            <a href="/berita">Berita</a>
-            <a href="/dokumen">Dokumen</a>
-            <a href="/media">Media</a>
-            <a href="/event">Event</a>
-            <a href="/bakti">Bakti Bagi Negeri</a>
-        </div>
-        <a href="/profil" class="logo-link">
-            <img src="../assets/ppanggota.png" alt="Login" class="logo-img-profile">
-        </a>
-    </nav>
+    <x-navbar-users></x-navbar-users>
     <div class="profil-container">
         <div class="profil-box">
             <div class="profil-header">
@@ -47,7 +19,7 @@
                         <li><a href="/dashboard"><img src="../assets/dashboard.png" alt="Dashboard Icon"> Dashboard</a></li>
                         <li><a href="/keluhan"><img src="../assets/keluhan.png" alt="Keluhan Icon"> Advokasi/Konsultasi</a></li>
                         <li><a href="/aspirasi"><img src="../assets/aspirasi.png" alt="Aspirasi Icon"> Aspirasi</a></li>
-                        <li><a href="/"><img src="../assets/keluar.png" alt="Keluar Icon"> Keluar</a></li>
+                        <li><a href="/logout"><img src="../assets/keluar.png" alt="Keluar Icon"> Keluar</a></li>
                     </ul>
                 </nav>
             </div>
@@ -61,16 +33,16 @@
                         <div class="profil-details">
                             <div class="profil-details-item">
                                 <h3>Nama Anggota</h3>
-                                <p>Anggota</p>
+                                <p>{{ Auth::user()->nama }}</p>
                             </div>
                             <div class="profil-contact">
                                 <div class="profil-contact-item">
-                                    <strong>Nomor Telepon</strong>
-                                    <p>082123456789</p>
+                                    <strong>Posisi</strong>
+                                    <p>{{ Auth::user()->posisi->nama_posisi }}</p> <!-- Asumsi nama kolom posisi -->
                                 </div>
                                 <div class="profil-contact-item">
-                                    <strong>Lokasi Bekerja</strong>
-                                    <p>Bandung</p>
+                                    <strong>Nomor Telepon</strong>
+                                    <p>{{ Auth::user()->no_telp }}</p>
                                 </div>
                             </div>
                         </div>

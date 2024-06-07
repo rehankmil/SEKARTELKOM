@@ -9,7 +9,7 @@
     <link rel="icon" href="../assets/favicon.png">
 </head>
 <body>
-    <x-navbar-users></x-navbar-users>
+    <x-navbar-landingpage></x-navbar-landingpage>
     <div class="main-body">
         <header>
             <h1>Event Sekar</h1>

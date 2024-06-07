@@ -6,13 +6,15 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\Posisi;
 
-class ProfilController extends Controller
+class ProfileController extends Controller
 {
     public function show()
     {
         $user = Auth::user();
-        $posisi = Posisi::find($user->id_posisi);
+        $user->load('posisi'); // Ensure posisi relationship is loaded
 
-        return view('users/profil', ['user' => $user, 'posisi' => $posisi]);
+        return view('profile', [
+            'user' => $user,
+        ]);
     }
 }

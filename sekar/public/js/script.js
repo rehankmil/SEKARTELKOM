@@ -7,21 +7,70 @@ function toggleNav() {
     }
 }
 
-function handleTujuanChange(event) {
-    const dpdDropdown = document.getElementById('dpd-dropdown');
+document.addEventListener('DOMContentLoaded', function() {
+    const dppRadio = document.getElementById('dpp');
+    const dpwRadio = document.getElementById('dpw');
+    const dpdRadio = document.getElementById('dpd');
     const dpwDropdown = document.getElementById('dpw-dropdown');
+    const dpdDropdown = document.getElementById('dpd-dropdown');
+    const dpwSelect = document.getElementById('dpw-select');
+    const dpdSelect = document.getElementById('dpd-select');
 
-    if (event.target.value === 'dpd') {
-        dpdDropdown.classList.remove('hidden');
-        dpwDropdown.classList.add('hidden');
-    } else if (event.target.value === 'dpw') {
-        dpwDropdown.classList.remove('hidden');
-        dpdDropdown.classList.add('hidden');
-    } else {
-        dpdDropdown.classList.add('hidden');
-        dpwDropdown.classList.add('hidden');
-    }
-}
+    const dpdOptions = {
+        Sumatera: [
+            { value: 'jakarta1', text: 'Jakarta 1' },
+            { value: 'jakarta2', text: 'Jakarta 2' }
+        ],
+        bandung: [
+            { value: 'bandung1', text: 'Bandung 1' },
+            { value: 'bandung2', text: 'Bandung 2' }
+        ],
+        surabaya: [
+            { value: 'surabaya1', text: 'Surabaya 1' },
+            { value: 'surabaya2', text: 'Surabaya 2' }
+        ]
+    };
+
+    // Update DPD options based on selected DPW
+    dpwSelect.addEventListener('change', function() {
+        const selectedDPW = dpwSelect.value;
+        const options = dpdOptions[selectedDPW] || [];
+
+        dpdSelect.innerHTML = '';
+
+        options.forEach(function(option) {
+            const opt = document.createElement('option');
+            opt.value = option.value;
+            opt.text = option.text;
+            dpdSelect.appendChild(opt);
+        });
+    });
+    
+    dppRadio.addEventListener('change', function() {
+        if (dppRadio.checked) {
+            dpwDropdown.classList.add('hidden');
+            dpdDropdown.classList.add('hidden');
+        }
+    });
+    
+    dpwRadio.addEventListener('change', function() {
+        if (dpwRadio.checked) {
+            dpwDropdown.classList.remove('hidden');
+            dpdDropdown.classList.add('hidden');
+        }
+    });
+
+    dpdRadio.addEventListener('change', function() {
+        if (dpdRadio.checked) {
+            dpwDropdown.classList.remove('hidden');
+            dpdDropdown.classList.remove('hidden');
+        }
+    });
+    
+    // Hide both dropdowns on page load
+    dpdDropdown.classList.add('hidden');
+    dpwDropdown.classList.add('hidden');
+});
 
 document.addEventListener('DOMContentLoaded', function () {
     const buttons = document.querySelectorAll('nav button');
